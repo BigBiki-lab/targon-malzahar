@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="flashcardsmainstyle.css">
+
+</head>
+<body>
+
+<div class="sidenav">
+<!--    <button class="dropdown-btn">Energy - Forces Doing Work-->
+<!--        <i class="fa fa-caret-down"></i>-->
+<!--    </button>-->
+<!--    <div class="dropdown-container">-->
+<!--        <a href="#">Link 1</a>-->
+<!--        <a href="#">Link 2</a>-->
+<!--        <a href="#">Link 3</a>-->
+<!--    </div>-->
+
+<!--    <button class="dropdown-btn">Forces and their Effects-->
+<!--        <i class="fa fa-caret-down"></i>-->
+<!--    </button>-->
+<!--    <div class="dropdown-container">-->
+<!--        <a href="#">Link 1</a>-->
+<!--        <a href="#">Link 2</a>-->
+<!--        <a href="#">Link 3</a>-->
+<!--    </div>-->
+
+<!--    <button class="dropdown-btn">Electricity and Circuits-->
+<!--        <i class="fa fa-caret-down"></i>-->
+<!--    </button>-->
+<!--    <div class="dropdown-container">-->
+<!--        <a href="#">Link 1</a>-->
+<!--        <a href="#">Link 2</a>-->
+<!--        <a href="#">Link 3</a>-->
+<!--    </div>-->
+
+<!--    <button class="dropdown-btn">Static Electricity-->
+<!--        <i class="fa fa-caret-down"></i>-->
+<!--    </button>-->
+<!--    <div class="dropdown-container">-->
+<!--        <a href="#">Link 1</a>-->
+<!--        <a href="#">Link 2</a>-->
+<!--        <a href="#">Link 3</a>-->
+<!--    </div>-->
+
+<!--    <button class="dropdown-btn">Magnetism and the Motor Effect-->
+<!--        <i class="fa fa-caret-down"></i>-->
+<!--    </button>-->
+<!--    <div class="dropdown-container">-->
+<!--        <a href="flashcardsmotoreffect.html">Motor Effect</a>-->
+<!--        <a href="#">Link 2</a>-->
+<!--        <a href="#">Link 3</a>-->
+<!--    </div>-->
+
+<!--    <button class="dropdown-btn">Electromagnetic Induction-->
+<!--        <i class="fa fa-caret-down"></i>-->
+<!--    </button>-->
+<!--    <div class="dropdown-container">-->
+<!--        <a href="flashcardselectromagneticinduction.html">Electromagnetic Induction</a>-->
+<!--        <a href="flashcardsgenerators1.html">Generators 1</a>-->
+<!--        <a href="flashcardsgenerators2.html">Generators 2</a>-->
+<!--        <a href="flashcardsdynamo1.html">Dynamo 1</a>-->
+<!--        <a href="flashcardsdynamo2.html">Dynamo 2</a>-->
+<!--        <a href="Flash-cards-Loudspeaker-1.html">Loudspeaker 1</a>-->
+<!--        <a href="flashcardsloudspeaker2.html">Loudspeaker 2</a>-->
+<!--    </div>-->
+
+<!--    <button class="dropdown-btn">Particle Model-->
+<!--        <i class="fa fa-caret-down"></i>-->
+<!--    </button>-->
+<!--    <div class="dropdown-container">-->
+<!--        <a href="#">Link 1</a>-->
+<!--        <a href="#">Link 2</a>-->
+<!--        <a href="#">Link 3</a>-->
+<!--        <a href="#">Link 4</a>-->
+<!--    </div>-->
+
+<!--    <button class="dropdown-btn">Forces and Matter-->
+<!--        <i class="fa fa-caret-down"></i>-->
+<!--    </button>-->
+<!--    <div class="dropdown-container">-->
+<!--        <a href="#">Link 1</a>-->
+<!--        <a href="#">Link 2</a>-->
+<!--        <a href="#">Link 3</a>-->
+<!--        <a href="#">Link 4</a>-->
+<!--    </div>-->
+
+</div>
+<script>
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+
+
+</script>
+</body>
+</html>
